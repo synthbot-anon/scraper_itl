@@ -1,0 +1,24 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[project]
+name = "scraper_itl"
+version = "0.0.1"
+authors = [
+  { name="That Dev", email="sunny@thatone.ai" },
+]
+description = ""
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = [
+    "httpx"
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: POSIX :: Linux",
+]
+
