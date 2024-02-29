@@ -54,9 +54,9 @@ class RateLimitedSession:
                 if fragile:
                     return None
 
-            backoff = backoff * 2
             debug_print(f"Retrying {url} in {backoff} seconds")
-            await asyncio.sleep(random() * backoff)
+            await asyncio.sleep((1 + random()) * backoff)
+            backoff = backoff * 2
 
     async def downloadImage(self, url, timeout=None, debug_print=print):
         while True:

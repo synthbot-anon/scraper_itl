@@ -7,7 +7,7 @@ allow-direct-references = true
 
 [project]
 name = "scraper_itl"
-version = "0.0.1"
+version = "0.0.3"
 authors = [
   { name="That Dev", email="sunny@thatone.ai" },
 ]
@@ -15,7 +15,7 @@ description = ""
 readme = "README.md"
 requires-python = ">=3.7"
 dependencies = [
-    "httpx"
+    "itllib"
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
